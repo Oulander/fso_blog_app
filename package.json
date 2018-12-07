@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
     "test": "cross-env NODE_ENV=test jest --verbose=true",
     "watch": "cross-env NODE_ENV=development nodemon index.js",
     "lint": "eslint ."
@@ -13,13 +13,13 @@
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^3.0.2",
+    "cross-env": "^5.2.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.3.10"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0",
     "dotenv": "^6.1.0",
     "eslint": "^5.8.0",
     "jest": "^23.6.0",
